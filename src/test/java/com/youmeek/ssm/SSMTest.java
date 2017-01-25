@@ -13,13 +13,13 @@ import javax.annotation.Resource;
 @ContextConfiguration(locations = {"classpath*:spring/applicationContext*.xml"})
 public class SSMTest {
 
-	
+
 	@Resource
 	private SysUserService sysUserService;
 
 	@Test
 	public void test1() {
 		SysUser sysUser = sysUserService.getById(1L);
-		System.out.println("--------------------------------" + sysUser.toString());
+		System.out.println("----------------------------" + sysUser.toString());
 	}
 }
